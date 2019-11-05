@@ -10,8 +10,8 @@ var APP_MSG = process.env.APP_MSG;
 // App
 const app = express();
 app.get('/', (req, res) => {
-	res.send(APP_MSG + "\n");
+	res.send("app_msg: " + APP_MSG + "\n");
 	});
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.listen(PORT);
+console.log(`Running on server on port://${PORT}`);
